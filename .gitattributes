@@ -1,0 +1,2 @@
+*.sh linguist-language=Golang
+*.json linguist-language=Javascript

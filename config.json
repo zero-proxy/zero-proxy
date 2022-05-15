@@ -1,0 +1,34 @@
+{
+  "maxWorkers": 0,
+  "workerPrefix": "zero",
+  "user": {
+    "username": "zero-proxy",
+    "password": "zeroproxypwd"
+  },
+  "agents": [],
+  "servers": [
+    {
+      "port": 10200,
+      "tls": false,
+      "pool": {
+        "host": "asia1.ethermine.org",
+        "port": 4444,
+        "tls": false
+      },
+      "id": "dcd74305"
+    },
+    {
+      "port": 10201,
+      "tls": true,
+      "pool": {
+        "host": "asia1.ethermine.org",
+        "port": 5555,
+        "tls": true
+      },
+      "id": "a614a3a0"
+    }
+  ],
+  "cert": {
+    "builtIn": true
+  }
+}
