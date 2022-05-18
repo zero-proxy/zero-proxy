@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://zero-proxy.com">
-    <img width="200" src="./images/logo.svg">
+    <img width="200" src="https://zero-proxy.com/static/images/logo.svg">
   </a>
 </p>
 
@@ -55,10 +55,10 @@ http://ip:3001
 ## 💻 Web 控制台截图
 
 <div>
-  <img src="./images/dashboard.png">
-  <img src="./images/workers.png">
-  <img src="./images/agents.png">
-  <img src="./images/proxy-config.png">
+  <img src="https://zero-proxy.com/static/images/dashboard.png">
+  <img src="https://zero-proxy.com/static/images/workers.png">
+  <img src="https://zero-proxy.com/static/images/agents.png">
+  <img src="https://zero-proxy.com/static/images/proxy-config.png">
 </div>
 
 ## ⚒️ 手动安装(Linux)
