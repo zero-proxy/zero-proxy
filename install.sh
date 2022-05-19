@@ -85,7 +85,7 @@ function ensure_pm2() {
     echo "initiate pm2-logrotate"
     pm2 install pm2-logrotate
     pm2 set pm2-logrotate:max_size 20M
-    pm2 set pm2-logrotate:compress true
+    pm2 set pm2-logrotate:compress false
     pm2 set pm2-logrotate:retain 10
   fi
 }
