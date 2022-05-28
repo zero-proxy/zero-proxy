@@ -16,6 +16,7 @@ To build the most lightweight, effecient, transparent and stable mining proxy.
 
 ## ✨ Features
 
+- 🎨 One proxy can handle ETH and ETC proxy in the same time.
 - 🚀 A aws-ts.medium server can accept 3000+ workers and run stably.
 - 🌈 One proxy can listen on multiple ports and connect to multiple pools.
 - 📦 The highly efficient agent algothrim does it best to reduce the wast of shares and keep the hashrate of client worker normal.
@@ -31,26 +32,38 @@ To build the most lightweight, effecient, transparent and stable mining proxy.
 - Windows 7 +
 - OSX
 
-## 📦 One Key Install (For Linux)
+## 📦 One click Install (For Linux)
 
-One key installer contains multiple functionality including install, uninstall, start, stop, restart update, etc.
+One click installer contains multiple functionality including install, uninstall, start, stop, restart update, etc.
 
 ```bash
 curl -o install.sh https://raw.githubusercontent.com/zero-proxy/zero-proxy/master/install.sh && chmod u+x install.sh && bash install.sh
 ```
 
-The daemon is setup automatically via one key installer, and you are free to go. You can run it again to start/stop/restart/update the proxy or even completely uninstall it.
+The daemon is setup automatically via one click installer, and you are free to go. You can run it again to start/stop/restart/update the proxy or even completely uninstall it.
 
 Once the proxy is installed, you can visit the dashboard using following url:
 
 ```
-http://ip:3001
+http://IP:3001
 
 user: zero-proxy
 pwd: zeroproxypwd
 ```
 
 You can set the credential on [config.json](./config.json), please update it as soon as possible to avoid unattempted login or MITM attack.
+
+## Change log
+
+### 2022-05-28
+
+zero-proxy V1.1.0 is released now, the following changes are made in this version:
+
+1. Multiple coins support, now you can proxy ETH and ETC pools.
+2. Blacklist functionality is added to the system, you can specify the IPs and block them.
+3. Optimizing the profit sharing algorithm and improve the efficiency.
+
+It is highly recommended to update to this version.
 
 ## 💻 Web Dashboard
 
@@ -164,7 +177,8 @@ We can configure various connection methods through the combination of listening
       "pool": {
         "host": "asia1.ethermine.org",
         "port": 4444,
-        "tls": false
+        "tls": false,
+        "coin": "ETH"
       },
       "id": "dcd74305"
     },
@@ -174,7 +188,8 @@ We can configure various connection methods through the combination of listening
       "pool": {
         "host": "asia1.ethermine.org",
         "port": 5555,
-        "tls": true
+        "tls": true,
+        "coin": "ETH"
       },
       "id": "a614a3a0"
     },
@@ -184,7 +199,8 @@ We can configure various connection methods through the combination of listening
       "pool": {
         "host": "eth-hk.flexpool.io",
         "port": 5555,
-        "tls": true
+        "tls": true,
+        "coin": "ETH"
       },
       "id": "b75ac91d"
     },

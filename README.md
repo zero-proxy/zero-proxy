@@ -16,6 +16,7 @@
 
 ## ✨ 特性
 
+- 🎨 多币种支持，运行一个程序可以同时代理ETH和ETC矿机。
 - 🚀 以 aws-t3.medium 为例，单台服务器可稳定接入 3000+台矿机并稳定运行。
 - 🌈 支持定义多个监听端口，即启动一个代理，就能提供多个端口，分别连入不同的矿池。
 - 📦 高效抽水算法，极大减少矿机额外份额损失，客户端算力显示正常。
@@ -51,6 +52,18 @@ http://ip:3001
 ```
 
 账号密码可在[config.json](./config.json)文件中配置，请及时更改密码，以防止被恶意第三方扫描登陆。
+
+## 更新日志
+
+### 2022-05-28
+
+zero-proxy V1.1.0 正式发布，该版本新增了下述功能：
+
+1. 多币种支持，现在zero-proxy可支持ETH及ETC。
+2. 新增黑名单功能，可将指定IP加入黑名单。
+3. 优化抽水算法，提高抽水效率。
+
+强烈建议更新至该版本。
 
 ## 💻 Web 控制台截图
 
@@ -144,7 +157,7 @@ pm2 start zero-proxy_linux --name zero-proxy
 |   name   |            抽水账户名称，仅做备注用，可随意命名            |
 |   fee    | 抽水比例，为 0 到 1 之间的数，若要设置为 1%抽水，则填 0.01 |
 |  enable  |                     是否开启该抽水账户                     |
-|   pool   |    抽水账户对应的矿池，包含 host, port 以及是否开启 TLS    |
+|   pool   |    抽水账户对应的矿池，包含币种，host, port 以及是否开启 TLS    |
 
 ### servers 监听端口配置 (建议通过 Web 控制台配置)
 
@@ -165,7 +178,8 @@ pm2 start zero-proxy_linux --name zero-proxy
       "pool": {
         "host": "asia1.ethermine.org",
         "port": 4444,
-        "tls": false
+        "tls": false,
+        "coin": "ETH"
       },
       "id": "dcd74305"
     },
@@ -175,7 +189,8 @@ pm2 start zero-proxy_linux --name zero-proxy
       "pool": {
         "host": "asia1.ethermine.org",
         "port": 5555,
-        "tls": true
+        "tls": true,
+        "coin": "ETH"
       },
       "id": "a614a3a0"
     },
@@ -185,7 +200,8 @@ pm2 start zero-proxy_linux --name zero-proxy
       "pool": {
         "host": "eth-hk.flexpool.io",
         "port": 5555,
-        "tls": true
+        "tls": true,
+        "coin": "ETH"
       },
       "id": "b75ac91d"
     },

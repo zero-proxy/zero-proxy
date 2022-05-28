@@ -13,7 +13,8 @@
       "pool": {
         "host": "asia1.ethermine.org",
         "port": 4444,
-        "tls": false
+        "tls": false,
+        "coin": "ETH"
       },
       "id": "dcd74305"
     },
@@ -23,7 +24,8 @@
       "pool": {
         "host": "asia1.ethermine.org",
         "port": 5555,
-        "tls": true
+        "tls": true,
+        "coin": "ETH"
       },
       "id": "a614a3a0"
     }
