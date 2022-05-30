@@ -17,6 +17,7 @@ To build the most lightweight, effecient, transparent and stable mining proxy.
 ## ✨ Features
 
 - 🎨 One proxy can handle ETH and ETC proxy in the same time.
+- 🔥 support all well-known pools such as ethermine/flexpool/2miners/hiveon/poolin/f2pool/ezil, etc.
 - 🚀 A aws-ts.medium server can accept 3000+ workers and run stably.
 - 🌈 One proxy can listen on multiple ports and connect to multiple pools.
 - 📦 The highly efficient agent algothrim does it best to reduce the wast of shares and keep the hashrate of client worker normal.
@@ -54,6 +55,10 @@ pwd: zeroproxypwd
 You can set the credential on [config.json](./config.json), please update it as soon as possible to avoid unattempted login or MITM attack.
 
 ## Change log
+
+### 2022-05-30
+
+zero-proxy V1.1.1 is released. Now the proxy can support ezil+eth / ezil+etc better, please upgrade to this version if this meets your requirements.
 
 ### 2022-05-28
 
