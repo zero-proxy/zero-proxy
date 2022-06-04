@@ -58,7 +58,7 @@ You can set the credential on [config.json](./config.json), please update it as 
 
 ### 2022-06-04
 
-zero-proxy V1.2.0 is released. In this version, we optimize the connection and display algothrim for worker and improve the efficient for data access, it is recommended to upgrade to this version.
+zero-proxy V1.2.0 is released. In this version, we optimize the connection and display algorithm for worker and improve the efficient for data access, it is recommended to upgrade to this version.
 
 ### 2022-05-30
 
@@ -232,6 +232,10 @@ Yes, our algothrim is aim to maximize the sharing efficiency and reduce the effe
 2. Can the proxy support large-scale mining workers' connection?
 
 Of course, during our internal usage, a single aws-t3.medium server can accept 3200+ mining workers and run stably for a long time, also the CPU usage stays within 50%.
+
+3. How long should I wait for to see the profit sharing result after mining rigs joined?
+
+In order to guarantee the user experience, the proxy will work for client workers prior to agents when the worker joined. You can see the result on website after roughly 3-4 hours later. The next round of iteration will start after certain amount of time. The worker will be recorvered to previous state to meet the agent sharing rate if it was disconnected and then connected again.
 
 3. What's the different between TLS and SSL, do I still need to enable SSL if I already enable TLS througn the proxy?
 
