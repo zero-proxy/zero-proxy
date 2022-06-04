@@ -54,7 +54,11 @@ pwd: zeroproxypwd
 
 You can set the credential on [config.json](./config.json), please update it as soon as possible to avoid unattempted login or MITM attack.
 
-## Change log
+## Change Log
+
+### 2022-06-04
+
+zero-proxy V1.2.0 is released. In this version, we optimize the connection and display algothrim for worker and improve the efficient for data access, it is recommended to upgrade to this version.
 
 ### 2022-05-30
 
