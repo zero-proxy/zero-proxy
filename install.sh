@@ -201,15 +201,16 @@ function update() {
 clear
 while :; do
   echo
+  echo "欢迎使用 Zero Proxy"
   echo "Welcome to Zero Proxy"
   echo
-  echo "1. 安装"
-  echo "2. 卸载"
-  echo "3. 启动"
-  echo "4. 关闭"
-  echo "5. 重启"
-  echo "6. 更新"
-  read -p "$(echo -e "请选择 [1-6]:")" choose
+  echo "1. 安装 (Install)"
+  echo "2. 卸载 (Uninstall)"
+  echo "3. 启动 (Start)"
+  echo "4. 关闭 (Stop)"
+  echo "5. 重启 (Restart)"
+  echo "6. 更新 (Update Zero Proxy)"
+  read -p "$(echo -e "请选择 (Please choose) [1-6]:")" choose
   case $choose in
   1)
     install

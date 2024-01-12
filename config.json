@@ -8,26 +8,81 @@
   "agents": [],
   "servers": [
     {
-      "port": 10200,
-      "tls": false,
-      "pool": {
-        "host": "asia1.ethermine.org",
-        "port": 4444,
-        "tls": false,
-        "coin": "ETH"
-      },
-      "id": "dcd74305"
-    },
-    {
-      "port": 10201,
+      "port": 1100,
       "tls": true,
       "pool": {
-        "host": "asia1.ethermine.org",
-        "port": 5555,
+        "host": "asia-etc.2miners.com",
+        "port": 11010,
         "tls": true,
-        "coin": "ETH"
+        "coin": "ETC"
       },
-      "id": "a614a3a0"
+      "id": "etc-tls"
+    },
+    {
+      "port": 1200,
+      "tls": true,
+      "pool": {
+        "host": "asia-rvn.2miners.com",
+        "port": 16060,
+        "tls": true,
+        "coin": "RVN"
+      },
+      "id": "rvn-tls"
+    },
+    {
+      "port": 1300,
+      "tls": true,
+      "pool": {
+        "host": "kawpow.auto.nicehash.com",
+        "port": 443,
+        "tls": true,
+        "coin": "NICEHASH-KAWPOW"
+      },
+      "id": "nicehash-kawpow-tls"
+    },
+    {
+      "port": 1400,
+      "tls": true,
+      "pool": {
+        "host": "zhash.auto.nicehash.com",
+        "port": 443,
+        "tls": true,
+        "coin": "NICEHASH-ZHASH"
+      },
+      "id": "nicehash-zhash-tls"
+    },
+    {
+      "port": 1500,
+      "tls": true,
+      "pool": {
+        "host": "xna.2miners.com",
+        "port": 16060,
+        "tls": true,
+        "coin": "XNA"
+      },
+      "id": "xna-tls"
+    },
+    {
+      "port": 1600,
+      "tls": true,
+      "pool": {
+        "host": "ethw.2miners.com",
+        "port": 12020,
+        "tls": true,
+        "coin": "ETHW"
+      },
+      "id": "ethw-tls"
+    },
+    {
+      "port": 1700,
+      "tls": true,
+      "pool": {
+        "host": "asia-erg.2miners.com",
+        "port": 18888,
+        "tls": true,
+        "coin": "ERGO"
+      },
+      "id": "ergo-tls"
     }
   ],
   "cert": {
