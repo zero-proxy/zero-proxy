@@ -163,6 +163,7 @@ function stop() {
   echo "stoping zero proxy"
   pm2 stop zero-proxy
   pm2 stop pm2-logrotate
+  pm2 delete zero-proxy
 }
 
 function restart() {
