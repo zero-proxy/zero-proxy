@@ -16,7 +16,7 @@ The lightest, most efficient, transparent, and stable multi-cryptocurrency minin
 
 ## ✨ Features
 
-- 🎨 Multi-cryptocurrency support: Zero Proxy can simultaneously multi-port proxy various coins like ETC, RVN, NICEHASH, XNA, ETHW, ERGO, and more.
+- 🎨 Multi-cryptocurrency support: Zero Proxy can simultaneously multi-port proxy various coins like BTC, ETC, RVN, NICEHASH, XNA, ETHW, ERGO, and more.
 - 🔥 Supports various well-known mining pools such as 2miners, hiveon, poolin, f2pool, ezil, etc.
 - 🚀 A aws-ts.medium server can stably connect to over 3000 mining machines and operate smoothly.
 - 🌈 Supports defining multiple listening ports, meaning launching one proxy can provide multiple ports, each connecting to a different mining pool.
