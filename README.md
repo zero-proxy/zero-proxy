@@ -16,7 +16,7 @@
 
 ## ✨ 特性
 
-- 🎨 多币种支持，zero proxy 可同时多端口代理 ETC, RVN, NICEHASH, XNA, ETHW, ERGO 等多币种。
+- 🎨 多币种支持，zero proxy 可同时多端口代理 BTC, ETC, RVN, NICEHASH, XNA, ETHW, ERGO 等多币种。
 - 🔥 支持 2miners/hiveon/poolin/f2pool/ezil 等多种知名矿池。
 - 🚀 以 aws-t3.micro 为例，单台服务器可稳定接入 3000+ 台矿机并稳定运行。
 - 🌈 支持定义多个监听端口，即启动一个代理，就能提供多个端口，分别连入不同的矿池。
