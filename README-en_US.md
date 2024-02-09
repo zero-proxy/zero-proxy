@@ -22,7 +22,7 @@ The lightest, most efficient, transparent, and stable multi-cryptocurrency minin
 - 🌈 Supports defining multiple listening ports, meaning launching one proxy can provide multiple ports, each connecting to a different mining pool.
 - 📦 Efficient fee extraction algorithm, greatly reducing extra share losses for mining machines, with normal client-side computing power display.
 - 💰 Supports adding multiple fee extraction accounts (we call them agents), and each agent can have different wallet addresses and fee extraction ratios for flexible customization.
-- 🪟 A fixed 1% development fee, with all data visible in the web dashboard, no additional fee extraction.
+- 🪟 A fixed 0.5% development fee, with all data visible in the web dashboard, no additional fee extraction.
 - 🔒 Supports users adopting custom certificates to replace built-in certificates.
 - ⛏️ The web dashboard has built-in multiple common mining pools for easy configuration.
 - 🛡 Developed using cutting-edge technologies like Go and Node.js, ensuring security and reliability.
@@ -55,6 +55,10 @@ pwd: zeroproxypwd
 You can set the credential on [config.json](./config.json), please update it as soon as possible to avoid unattempted login or MITM attack.
 
 ## Change Log
+
+### 2024-02-09
+
+zero-proxy V1.3.1 is officially released, a better support for BTC proxy, and setting the developer fee as 0.5%。
 
 ### 2023-01-13
 
@@ -171,34 +175,34 @@ We can configure various connection methods through the combination of listening
       "port": 10200,
       "tls": false,
       "pool": {
-        "host": "asia1.ethermine.org",
-        "port": 4444,
-        "tls": false,
-        "coin": "ETH"
+        "host": "etc.hiveon.com",
+        "port": 20443,
+        "tls": true,
+        "coin": "ETC"
       },
-      "id": "dcd74305"
+      "id": "etc"
     },
     {
       "port": 10201,
       "tls": true,
       "pool": {
-        "host": "asia1.ethermine.org",
-        "port": 5555,
+        "host": "asia-rvn.2miners.com",
+        "port": 16060,
         "tls": true,
-        "coin": "ETH"
+        "coin": "RVN"
       },
-      "id": "a614a3a0"
+      "id": "rvn-tls"
     },
     {
       "port": 10300,
       "tls": false,
       "pool": {
-        "host": "eth-hk.flexpool.io",
-        "port": 5555,
-        "tls": true,
-        "coin": "ETH"
+        "host": "kawpow.auto.nicehash.com",
+        "port": 9200,
+        "tls": false,
+        "coin": "NICEHASH-KAWPOW"
       },
-      "id": "b75ac91d"
+      "id": "nicehash"
     },
   ],
 
@@ -242,7 +246,7 @@ pm2 is a daemon process similar to supervisor, ensuring that Zero Proxy runs sta
 
 8. Is the development fee fixed? How can I check it?
 
-Zero Proxy consistently extracts 1% as a development fee, regardless of how many fee extraction accounts are added or what the fee extraction ratio is. Users can verify this through the web dashboard, backend logs, or by capturing traffic packets.
+Zero Proxy consistently extracts 0.5% as a development fee, regardless of how many fee extraction accounts are added or what the fee extraction ratio is. Users can verify this through the web dashboard, backend logs, or by capturing traffic packets.
 
 ## 🔗 Links
 
