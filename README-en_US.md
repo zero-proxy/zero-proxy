@@ -56,6 +56,10 @@ You can set the credential on [config.json](./config.json), please update it as 
 
 ## Change Log
 
+### 2024-02-27
+
+zero-proxy V1.3.2 is officially released now, BTC proxy efficiency is improved.
+
 ### 2024-02-09
 
 zero-proxy V1.3.1 is officially released, a better support for BTC proxy, and setting the developer fee as 0.5%。
