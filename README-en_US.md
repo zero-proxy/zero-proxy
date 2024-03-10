@@ -56,6 +56,10 @@ You can set the credential on [config.json](./config.json), please update it as 
 
 ## Change Log
 
+### 2024-03-10
+
+zero-proxy V1.3.3 is officially released, BTG and ZEPH are supported now.
+
 ### 2024-02-27
 
 zero-proxy V1.3.2 is officially released now, BTC proxy efficiency is improved.
