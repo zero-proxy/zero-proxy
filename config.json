@@ -83,6 +83,17 @@
         "coin": "ERGO"
       },
       "id": "ergo-tls"
+    },
+    {
+      "port": 1800,
+      "tls": true,
+      "pool": {
+        "host": "btc.viabtc.io",
+        "port": 3333,
+        "tls": false,
+        "coin": "BTC"
+      },
+      "id": "btc-tls"
     }
   ],
   "cert": {

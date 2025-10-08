@@ -2,7 +2,7 @@
 #
 # https://github.com/zero-proxy/zero-proxy
 #
-# Copyright (c) 2022. Released under the MIT License.
+# Copyright (c) 2025. Released under the MIT License.
 
 # constants
 cert_dir="certificate"

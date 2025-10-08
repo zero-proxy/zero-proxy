@@ -56,6 +56,10 @@ You can set the credential on [config.json](./config.json), please update it as 
 
 ## Change Log
 
+### 2025-10-08
+
+zero-proxy V1.3.7 released, fixing an issue where miners could fail to connect in certain scenarios.
+
 ### 2024-04-02
 
 zero-proxy V1.3.4 is officially released, some bugs are fixed in this version.
